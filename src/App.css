@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+*{
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  height: 55px;
+  background-color: #3EC1D3;
   text-align: center;
+  margin-bottom: 12px;
+}
+.header img{
+  margin: 12px auto;
+  height: 40px;
+}
+.footer{
+  height: 55px;
+  background-color: #3EC1D3;
+  
+}
+.footer p{
+  padding-top: 16px;
+  margin: auto;
+  text-align: center;
+  font-size: small;
+}
+.footer p:after {
+  content:"\00a9";
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.info{
+  /* padding: 12px 12px; */
+  height: 180px;
+  max-width: 80%;
+  margin: 12px 0;
+  padding:10px 5px;
+  border-radius: 8px;
+  max-width: 80%;
+  box-shadow: 0 0 100px #ececec;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-size-12{
+   font-size: 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.info-location {
+  gap: 12px;
 }
-
-.card {
-  padding: 2em;
+.info--country{
+  padding-left:5px;
 }
-
-.read-the-docs {
-  color: #888;
+.info--map{
+  color: #918E9B;
+  text-decoration: none;
+}
+.info--details{
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.info--details > * {
+  margin-top: 9px;
+}
+.info--img{
+  height: 168px;
+  width: 125px;
+  border-radius: 8px;
+}
+.info-date{
+  margin-top: 1.5rem;
 }
